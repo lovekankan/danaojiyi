@@ -1,0 +1,33 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : false,
+    "frameRate" : 60,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d", "extensions"],
+
+    "jsList" : [
+        "src/mm/boot.js",
+        "src/mm/Component.js",
+        "src/mm/EventComponent.js",
+        "src/mm/Events.js",
+        "src/mm/Node.js",
+        "src/mm/button/Button.js",
+        "src/mm/button/MenuButton.js",
+        "src/mm/button/MenuList.js",
+        "src/mm/button/ScrollSelect.js",
+
+
+        "src/resource.js",
+        "src/GameData.js",
+        "src/StartScene.js",
+        "src/SelectScene.js",
+        "src/GameScene.js",
+        "src/RemberScene.js",
+        "src/ResultScene.js"
+    ]
+}
