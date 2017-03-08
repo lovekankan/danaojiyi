@@ -14,6 +14,17 @@ var ResultLayer = cc.Layer.extend({
         var btnZy = ccui.helper.seekWidgetByName(node, "Panel_Zy");
         btnZy.addClickEventListener(this._onZy);
 
+
+        var labJyNums = ccui.helper.seekWidgetByName(node, "Label_JyNums");
+        var labJyHs = ccui.helper.seekWidgetByName(node, "Label_HaoShi");
+        var labJyZqRate = ccui.helper.seekWidgetByName(node, "Label_ZqRate");
+        var labJyLscj = ccui.helper.seekWidgetByName(node, "Label_HistoryCj");
+
+        labJyNums.setString(GameData.currJyTotalNum);
+        labJyHs.setString(Tools.formatTime(GameData.currCostTotalTime));
+        //labJyZqRate.setString(GameData.currJyTotalNum);
+        //labJyLscj.setString(GameData.currJyTotalNum);
+
         return true;
     },
 

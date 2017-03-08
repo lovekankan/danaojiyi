@@ -26,6 +26,7 @@ var GameLayer = cc.Layer.extend({
 
         GameData.tempJyDataArr = [];
         GameData.jyDataArr = [];
+        GameData.currCostTotalTime = 0;
         this._currCalcTime = GameData.currEveryJyTime;//单位为秒
         this._currIndex = 1;
 

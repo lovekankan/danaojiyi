@@ -29,6 +29,7 @@
         "src/GameScene.js",
         "src/RemberScene.js",
         "src/ResultScene.js",
-        "src/HistoryScene.js"
+        "src/HistoryScene.js",
+        "src/Tools.js"
     ]
 }
