@@ -24,7 +24,7 @@ var GameLayer = cc.Layer.extend({
         panelNextPage.addClickEventListener(this._onNextPage.bind(this));
 
 
-        GameData.haveJyDataArr = [];
+        GameData.tempJyDataArr = [];
         GameData.jyDataArr = [];
         this._currCalcTime = GameData.currEveryJyTime;//单位为秒
         this._currIndex = 1;
@@ -49,9 +49,10 @@ var GameLayer = cc.Layer.extend({
 
     _getRandomItemIndex: function() {   //获取随机对象，保证不重复
         var itemIndex = parseInt(Math.random() * GameData.totalItemNum);
-        while(GameData.haveJyDataArr[itemIndex]) {
+        while(GameData.tempJyDataArr[itemIndex]) {
             itemIndex = parseInt(Math.random() * GameData.totalItemNum);
         }
+        GameData.tempJyDataArr[itemIndex] = 1
         return itemIndex;
     },
 

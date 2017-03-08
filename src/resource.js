@@ -21,7 +21,11 @@ var res = {
     resultpanel_png: "res/resultpanel.png",
 
     controlbar_plist: "res/controlbar.plist",
-    controlbar_png: "res/controlbar.png"
+    controlbar_png: "res/controlbar.png",
+
+    lsjy_json: "res/lsjypanel.json",
+    lsjy_png: "res/lsjy.png",
+    lsjy_plist: "res/lsjy.plist"
 
 };
 
